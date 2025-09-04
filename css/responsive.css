@@ -1,0 +1,214 @@
+
+    /* Selection colours (easy to forget) */
+    
+    ::selection 	 	{background: rgb(255,255,158);}
+    ::-moz-selection 	{background: rgb(255,255,158);}
+    img::selection 		{background: transparent;}
+    img::-moz-selection	{background: transparent;}
+    body {-webkit-tap-highlight-color: rgb(255,255,158);}
+    
+    
+    
+    /*		Default Layout: 992px. 
+            Gutters: 24px.
+            Outer margins: 48px.
+            Leftover space for scrollbars @1024px: 32px.
+    -------------------------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8      9      10
+    px      68    160    252    344    436    528    620    712    804    896    */
+    @media screen and (max-width: 1024px) {
+        .wrapper{
+            width: 95%;
+        }
+        #nav{
+            display: none;
+        }
+        #float_icon{
+            display: none;
+        }
+    }
+
+    
+    
+    
+    /*		Tablet Layout: 768px.
+            Gutters: 24px.
+            Outer margins: 28px.
+            Inherits styles from: Default Layout.
+    -----------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8
+    px      68    160    252    344    436    528    620    712    */
+    @media screen and (max-width: 768px) {
+        .wrapper{
+            width: 100%;
+        }
+        #content_wrapper{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        #header_wrapper{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        #nav{
+            display: none;
+        }
+        #content{
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            flex-basis: 100%;
+        }
+        #getintouch{
+            display: none;
+        }
+        #content blockquote{
+            margin-left: 25px;
+            padding-left: 25px;
+        }
+        .box_wrapper{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        .box{
+            width: 70%;
+            margin: 10px;
+        }
+    }
+    
+    
+    
+    /*		Mobile Layout: 320px.
+            Gutters: 24px.
+            Outer margins: 34px.
+            Inherits styles from: Default Layout.
+    ---------------------------------------------
+    cols    1     2      3
+    px      68    160    252    */
+    
+    @media only screen and (max-width: 480px) {
+        .footer_link_wrapper{
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        .footer_link_section{
+            margin: 10px 0;
+        }
+        #content{
+            padding: 20px;
+        }
+        .column > h2{
+            font-size: 180%;
+        }
+        /* #content_wrapper{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        #content{
+            padding: 10px;
+        }
+        #header{
+            text-align: center;
+        }
+        #getintouch{
+            display: none;
+        }
+        #nav{
+            display: none;
+        }
+        .slider-wrapper{
+            display: none;
+        }
+        #content_wrapper{
+            padding: 0;
+        }
+
+        figure img{
+            max-width: 100%;
+            height: auto;
+        }
+        #main_article_single img{
+            width: 98.5%;
+            height: auto;
+        }
+        #content blockquote{
+            margin-left: 25px;
+            padding-left: 25px;
+        }
+        .box img{
+            width: 100%;
+            height: auto;
+        }
+        .social_icon a {
+            font-size: 25px;
+        }
+        #float_icon{
+            display: none;
+        }
+        #Go_to_top{
+            display: none;
+        } */
+        
+    }
+
+
+    @media only screen and(min-width: 480px) and (max-width: 767px) {
+        
+        
+        /* #header{
+            text-align: center;
+        }
+        #nav{
+            display: none;
+        }
+        .slider-wrapper{
+            display: none;
+        }
+        #content_wrapper{
+            padding: 0;
+        }
+        
+        figure img{
+            max-width: 100%;
+            height: auto;
+        }
+        #main_article_single img{
+            width: 98.5%;
+            height: auto;
+        }
+        
+        .box img{
+            width: 100%;
+            height: auto;
+        }
+        .social_icon a {
+            font-size: 25px;
+        }
+        #float_icon{
+            display: none;
+        }
+        #Go_to_top{
+            display: none;
+        } */
+        
+    }
+    
+    
+    /*	Retina media query.
+        Overrides styles for devices with a 
+        device-pixel-ratio of 2+, such as iPhone 4.
+    -----------------------------------------------    */
+    
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+        
+        body {
+        
+        }
+        
+    }
